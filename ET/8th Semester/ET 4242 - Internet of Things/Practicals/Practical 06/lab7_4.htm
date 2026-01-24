@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+
+<html>
+<body>
+	<h2>
+	DIP switch value:
+	<div id="dipdata"></div>
+	</h2>
+
+	<script type="text/javascript">
+
+	setInterval (loaddata, 500);
+	function loaddata()
+	{
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function(){
+			if( this.readyState == 4 && this.status == 200){
+				document.getElementById("dipdata").innerHTML = 
+					this.responseText;
+			}
+		};
+		
+		xhttp.open("GET", "/cgi-bin/script7_4.py", true);
+		xhttp.send();
+	}
+	</script>
+</body>
+</html>
+

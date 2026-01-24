@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+
+<html>
+<body>
+	<h2>
+	<form>
+		<p>LED State: <input type="checkbox" id="led" value="power_on"
+			onchange="updatedata()"/></p>
+	</form>
+
+	DIP switch value:
+	<div id="dipdata">1</div>
+	</h2>
+
+	<script type="text/javascript">
+
+	function updatedata()
+	{
+		var xhttp = new XMLHttpRequest();
+		xhttp.open("POST","/cgi-bin/script7_5.py", true);
+		xhttp.setRequestHeader("Content-type",
+						"application/x-www-form-urlencoded");
+		if ( document.getElementById("led").checked )
+			xhttp.send("led=power_on");
+		else
+			xhttp.send("led=power_off");
+	}
+
+	setInterval (loaddata, 500);
+	function loaddata()
+	{
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function(){
+			if( this.readyState == 4 && this.status == 200){
+				document.getElementById("dipdata").innerHTML = 
+					this.responseText;
+			}
+		};
+		
+		xhttp.open("GET", "/cgi-bin/script7_4.py", true);
+		xhttp.send();
+	}
+	</script>
+</body>
+</html>
+
