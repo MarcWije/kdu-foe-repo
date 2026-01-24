@@ -4,6 +4,8 @@
 
 This repository was created to store all course materials in a central location, to support undergraduates of the various streams of the faculty of engineering. Contributions are welcome!
 
+**<p style="color: red;">NOTE: Currently only ET Lecture notes are present in the repository. Contributions from other streams are encouraged</p>**
+
 The Repository is structured as follows:
 
 Stream → Semester → Module → Papers / Lecture Slides / Other Materials
