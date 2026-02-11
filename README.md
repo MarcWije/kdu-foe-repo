@@ -1,6 +1,6 @@
 # KDU FOE repository
 
-## A repository of Past Papers, Lectures Slides, and other Course Materials for the Engineering Degrees carried out at the Faculty of Engineering, Kotelawala Defence University 
+### A repository of Past Papers, Lectures Slides, and other Course Materials for the Engineering Degrees carried out at the Faculty of Engineering, Kotelawala Defence University 
 
 This repository was created to store all course materials in a central location, to support undergraduates of the various streams of the faculty of engineering. Contributions are welcome!
 
@@ -24,5 +24,8 @@ NOTE: This repository primarily uses the Electronics and Telecommunication Strea
 
 This repository is based on <a href= "https://github.com/DevinRC">DevinRC</a>’s <a href="https://github.com/DevinRC/iit-past-assessments">IIT repository</a>
 
+# Acknowledgements
 
+This repository is possible thanks to all those who submitted Past Papers and Lecture Slides. 
 
+*"If I have seen further [than others] it is by standing on the shoulders of Giants." ~ Sir Isaac Newton*
